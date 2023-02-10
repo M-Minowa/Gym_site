@@ -4,7 +4,14 @@
     padding-top: 220px;
     padding-left: 165px;
 
+    &__title {
+        display: inline-flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
     &__text {
+        display: inline-block;
         margin: 0 0 20px;
         overflow: hidden;
         position: relative;
