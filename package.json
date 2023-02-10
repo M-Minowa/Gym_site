@@ -64,5 +64,8 @@
     "watch": "^1.0.2",
     "watchify": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^9.4.2",
+    "yarn": "^1.22.19"
+  }
 }

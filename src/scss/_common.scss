@@ -1,0 +1,14 @@
+.btn {
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 50px;
+    background-color: $color_main;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

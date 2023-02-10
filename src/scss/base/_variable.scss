@@ -3,6 +3,7 @@ variables
 ---------------*/
 
 // color
+$color_main: #EB51C2;
 
 // grayscale
 $grayscale_white: #ffffff;
@@ -11,7 +12,8 @@ $grayscale_gray200: #F6F6F6;
 $grayscale_black: #333333;
 
 // text
-$text_main: #211815;
+$text_main: #111111;
+$text_green: #00B21B;
 $text_sub: #999999;
 
 // background
@@ -54,7 +56,7 @@ $shadow_small: 0 1px 4px rgba(0,0,0,0.2);
 $focus: 0 0 0 4px rgba(41,182,246,0.4);
 
 // font
-$font_jp: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+$font_jp: 'Josefin Sans', 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 
 // breakpoint
 $breakpoint_sp: 767px;
