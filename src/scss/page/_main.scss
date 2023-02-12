@@ -51,6 +51,10 @@
         &--and {
             color: $color_main;
         }
+
+        &--color {
+            background-color: $grayscale_white;
+        }
     }
 
     &__subtitle {
