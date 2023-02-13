@@ -35,8 +35,8 @@
     }
 }
 
-.header .active {
-    background-color: #fff;
+.header.active {
+    background-color: $grayscale_white;
     
     &__catch {
         display: block;
