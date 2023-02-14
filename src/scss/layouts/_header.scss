@@ -38,6 +38,7 @@
     &.active {
         background-color: $grayscale_white;
     
+        // .active .header__catchと同等の書き方
         #{$class}__catch {
             display: block;
         }
