@@ -1,4 +1,5 @@
 .header {
+    $class: &;
     display: flex;
     position: fixed;
     padding: 0 35px;
@@ -33,12 +34,12 @@
             }
         }
     }
-}
 
-.header.active {
-    background-color: $grayscale_white;
+    &.active {
+        background-color: $grayscale_white;
     
-    &__catch {
-        display: block;
+        #{$class}__catch {
+            display: block;
+        }
     }
 }
