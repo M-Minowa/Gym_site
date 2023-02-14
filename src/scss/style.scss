@@ -7,8 +7,11 @@
 
 // layout
 // ------------------------------------
+@import 'layouts/header';
 @import 'layouts/footer';
 
 // page
 // ------------------------------------
 @import 'page/main';
+
+@import 'common';
