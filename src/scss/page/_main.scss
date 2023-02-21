@@ -122,3 +122,64 @@
       transform: translateX(102%);
     }
 }
+
+.intro {
+    margin: -20px 0 0;
+
+    &__title {
+        font-size: 10.8rem;
+        font-style: italic;
+        text-align: center;
+        color: $color_main;
+    }
+
+    &__subtitle {
+        font-size: 3.2rem;
+        text-align: center;
+        margin: 10px 0 24px;
+
+        &--pink {
+            color: $color_main;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+.about {
+
+    &__inner {
+        display: flex;
+        &:not(:last-child){
+        margin-bottom: 80px;
+        }
+    }
+
+    &__image {
+        width: 55%;
+    }
+
+    &__description {
+        width: 45%;
+        padding: 60px;
+
+        &--cat {
+            font-size: 2.4rem;
+            color: $color_main;
+        }
+
+        &--summary {
+            font-size: 3.2rem;
+            margin: 24px 0 18px;
+        }
+
+        &--detail {
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+    }
+}
