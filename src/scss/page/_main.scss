@@ -168,6 +168,7 @@
     &__inner {
         position: relative;
         display: flex;
+        align-items: flex-end;
         @include sp{
             flex-direction: column;
         }
@@ -187,30 +188,37 @@
             }
 
             .about__description {
-                left: 20px;
+                margin-left: 20px;
+                margin-right: -85px;
+
+                @include sp{
+                    margin-right: 20px;
+                }
             }
         }
     }
 
     &__image {
         width: 70%;
-        max-width: 950px;
         @include sp{
             width: 100%;
         }
     }
 
     &__description {
-        width: 555px;
+        width: 50%;
+        max-width: 555px;
         padding: 60px;
-        position: absolute;
-        right: 20px;
-        bottom: -20px;
+        margin-left: -85px;
+        margin-right: 20px;
+        margin-bottom: -20px;
         border-radius: 8px;
         background-color: $grayscale_white;
         box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+        position: relative;
         @include sp{
             width: calc(100% - 40px);
+            max-width: calc(100% - 40px);
             padding: 30px;
             position: static;
             margin: -10px 20px;
