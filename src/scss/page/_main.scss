@@ -168,19 +168,36 @@
     &__inner {
         position: relative;
         display: flex;
+        @include sp{
+            flex-direction: column;
+        }
 
         &:not(:last-child){
             margin-bottom: 80px;
+            @include sp{
+                margin-bottom: 40px;
+            }
         }
 
         &:nth-child(even){
             flex-direction: row-reverse;
+
+            @include sp{
+                flex-direction: column;
+            }
+
+            .about__description {
+                left: 20px;
+            }
         }
     }
 
     &__image {
         width: 70%;
         max-width: 950px;
+        @include sp{
+            width: 100%;
+        }
     }
 
     &__description {
@@ -192,10 +209,19 @@
         border-radius: 8px;
         background-color: $grayscale_white;
         box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+        @include sp{
+            width: calc(100% - 40px);
+            padding: 30px;
+            position: static;
+            margin: -10px 20px;
+        }
 
         &--cat-pink {
             font-size: 2.4rem;
             color: $color_main;
+            @include sp{
+                font-size: 1.8rem;
+            }
 
             &-green {
                 color: $text_green;
@@ -205,16 +231,26 @@
         &--cat-green {
             font-size: 2.4rem;
             color: $text_green;
+            @include sp{
+                font-size: 1.8rem;
+            }
         }
 
         &--summary {
             font-size: 3.2rem;
             margin: 24px 0 18px;
+            @include sp{
+                font-size: 2.2rem;
+                margin: 20px 0 24px;
+            }
         }
 
         &--detail {
             font-size: 1.6rem;
             line-height: 1.8;
+            @include sp{
+                font-size: 1.4rem;
+            }
         }
     }
 }
