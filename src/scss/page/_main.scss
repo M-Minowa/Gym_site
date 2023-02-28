@@ -253,4 +253,15 @@
             }
         }
     }
+
+    &__btn {
+        width: 370px;
+        padding: 35px;
+        font-size: 2rem;
+        @include sp{
+            width: 300px;
+            padding: 20px;
+            font-size: 1.3rem;
+        }
+    }
 }
