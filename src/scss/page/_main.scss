@@ -296,5 +296,25 @@
         display: grid;
         column-gap: 15px;
         grid-template-columns: 1fr 1fr 1fr;
+
+        &__list {
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: $grayscale_white;
+        }
+
+        &__text {
+            color: $text_main;
+            padding: 20px;
+            line-height: 1.7;
+        }
+    }
+
+    .top-wave {
+        transform: translateY(1px);
+    }
+
+    .bottom-wave{
+        transform: translateY(-1px);
     }
 }
