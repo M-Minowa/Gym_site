@@ -33,12 +33,12 @@ img{
     }
 }
 
-.tab{
-    display: none;
-    @include tab{
-        display: block;
-    }
-}
+// .tab{
+//     display: none;
+//     @include tab{
+//         display: block;
+//     }
+// }
 
 .sp{
     display: none;

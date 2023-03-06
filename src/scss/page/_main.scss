@@ -262,3 +262,38 @@
         }
     }
 }
+
+.trainer {
+    color: $grayscale_white;
+
+    &__inner {
+        background-color: $color_main;
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-size: 6.4rem;
+        line-height: 1;
+        padding: 0 30px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 40px;
+    }
+
+    .tab-nav {
+        display: grid;
+        margin-bottom: 20px;
+        cursor: pointer;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .tab-member {
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
