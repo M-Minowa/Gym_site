@@ -323,7 +323,12 @@
         &__text {
             color: $text_main;
             padding: 20px;
+            font-size: 1.5rem;
             line-height: 1.7;
+            @include sp{
+                font-size: 1.4rem;
+                line-height: 1.5;
+            }
         }
     }
 
