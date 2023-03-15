@@ -37,6 +37,7 @@
 
     &.active {
         background-color: $grayscale_white;
+        transition: all ease 0.3s; // なめらかに表示したいのでtransitionを追加します
     
         // .active .header__catchと同等の書き方
         #{$class}__catch {
