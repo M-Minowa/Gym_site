@@ -317,10 +317,10 @@
         .tab {
             color: $grayscale_white;
             font-size: 1.8rem;
+            padding: 5px 0 10px 0;
 
             &.active {
                 border-bottom: solid 2px;
-                padding-bottom: 20px;
                 font-weight: bold;
             }
         }
@@ -352,7 +352,7 @@
             }
         }
 
-        &.active {
+        &.show {
             display: grid;
         }
     }

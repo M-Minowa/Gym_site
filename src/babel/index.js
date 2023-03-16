@@ -1,5 +1,5 @@
 'use strict';
 
-const modal = require('./modal.js');
+const tubmenu = require('./tubmenu.js');
 
-modal;
+tubmenu;
