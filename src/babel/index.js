@@ -1,5 +1,5 @@
 'use strict';
 
-const tubmenu = require('./tubmenu.js');
+const tabmenu = require('./tabmenu.js');
 
-tubmenu;
+tabmenu;
