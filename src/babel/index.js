@@ -1,5 +1,5 @@
 'use strict';
 
-const modal = require('./modal.js');
+const fadeup = require('./fadeup.js');
 
-modal;
+fadeup;
