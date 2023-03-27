@@ -5,3 +5,6 @@ fadeup;
 
 const tabmenu = require('./tabmenu.js');
 tabmenu;
+
+const splide = require("./splide.js");
+splide;
