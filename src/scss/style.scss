@@ -5,6 +5,11 @@
 @import 'base/variable';
 @import 'base/base';
 
+// splide
+// ------------------------------------
+@import '../../node_modules/@splidejs/splide/dist/css/splide-core.min';
+@import '../../node_modules/@splidejs/splide/dist/css/splide.min';
+
 // layout
 // ------------------------------------
 @import 'layouts/header';

@@ -44,6 +44,7 @@
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
+    "@splidejs/splide": "^4.1.4",
     "autoprefixer": "^10.2.5",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",

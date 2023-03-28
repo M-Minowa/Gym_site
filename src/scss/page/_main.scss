@@ -365,3 +365,127 @@
         transform: translateY(-1px);
     }
 }
+
+.studio {
+    &__title {
+        font-size: 6.4rem;
+        line-height: 1;
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: $text_main;
+        @include sp{
+            font-size: 3.2rem;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 40px;
+        color: $color_main;
+        @include sp{
+            font-size: 1.4rem;
+            margin: 5px 0 30px;
+        }
+    }
+}
+
+.splide {
+    position: relative;
+
+    &__slide {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__arrow {
+        align-items: center;
+        background: $grayscale_white;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 80px;
+        z-index: 1;
+        opacity: 1;
+        @include sp{
+            width: 40px;
+            height: 40px;
+        }
+
+        &--prev {
+            left: -40px;
+            @include sp{
+                left: -20px;
+            }
+        }
+
+        &--next {
+            right: -40px;
+            @include sp{
+                right: -20px;
+            }
+        }
+
+        svg {
+            fill: $color_main;
+            height: 3.2rem;
+            width: 3.2rem;
+            @include sp{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+
+        &:hover {
+            &:not([disabled]) {
+                opacity: 1;     
+            }
+        }
+    }
+
+    &__pagination {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        pointer-events: none;
+        bottom: -20px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+
+        &__page {
+            background: #EAEAEA;
+            border-radius: 50%;
+            display: inline-block;
+            height: 8px;
+            margin: 4px;
+            position: relative;
+            transition: transform .2s linear,-webkit-transform .2s linear;
+            width: 8px;
+            opacity: 1;
+
+            &.is-active {
+                background: $color_main;
+                transform: scale(1);
+                z-index: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
