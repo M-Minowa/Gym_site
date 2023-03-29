@@ -5,3 +5,6 @@ fadeup;
 
 const tabmenu = require('./tabmenu.js');
 tabmenu;
+
+const fadeout = require("./fadeout.js");
+fadeout;
