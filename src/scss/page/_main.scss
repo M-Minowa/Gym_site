@@ -354,8 +354,8 @@
             margin-top: -24px;
             padding-top: 24px;
             overflow-x: auto;
-            padding-right: 30px;
-            margin-right: -30px;
+            // padding-right: 30px;
+            // margin-right: -30px;
         }
 
         &__scroll {
@@ -376,6 +376,11 @@
                     font-size: 40px;
                     text-align: center;
                 }
+            }
+
+            &.is-hide {
+                opacity: 0;
+                transition: all 0.2s ease-out;
             }
         }
     }
@@ -399,6 +404,7 @@
             width: 256px;
             color: $color_main;
             font-size: 2rem;
+            font-weight: bold;
             position: absolute;
             top: -24px;
             left: 50%;
