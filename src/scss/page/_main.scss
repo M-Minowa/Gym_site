@@ -277,32 +277,6 @@
 .trainer {
     color: $grayscale_white;
 
-    &__inner {
-        background-color: $color_main;
-        padding: 40px 0;
-    }
-
-    &__title {
-        font-size: 6.4rem;
-        line-height: 1;
-        padding: 0 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-        @include sp{
-            font-size: 4rem;
-        }
-    }
-
-    &__subtitle {
-        display: block;
-        font-size: 2rem;
-        margin: 10px 0 40px;
-        @include sp{
-            font-size: 1.4rem;
-            margin: 5px 0 30px;
-        }
-    }
-
     .tab-nav {
         display: grid;
         margin-bottom: 20px;
@@ -489,3 +463,115 @@
         }
     }
 }
+.price {
+    color: $grayscale_white;
+
+    .price-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        text-align: center;
+        @include sp{
+            position: relative;
+            white-space: nowrap;
+            margin-top: -24px;
+            padding-top: 24px;
+            overflow-x: auto;
+            // padding-right: 30px;
+            // margin-right: -30px;
+        }
+
+        &__scroll {
+            display: none;
+            @include sp{
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 5%;
+                transform: translateY(-50%);
+                font-size: 1.2rem;
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 4px;
+                padding: 10px;
+
+                &--icon {
+                    display: block;
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+
+            &.is-hide {
+                opacity: 0;
+                transition: all 0.2s ease-out;
+            }
+        }
+    }
+}
+
+    .price-unit {
+        background-color: $grayscale_white;
+        padding: 40px 20px 10px;
+        color: $text_main;
+        border-radius: 10px;
+        position: relative;
+        @include sp{
+            width: 335px;
+        }
+
+        &__label {
+            background-color: $grayscale_white;
+            border: 2px solid $color_main;
+            border-radius: 70px;
+            padding: 12px;
+            width: 256px;
+            color: $color_main;
+            font-size: 2rem;
+            font-weight: bold;
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__course {
+            color: $color_main;
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        &__price {
+            margin-bottom: 20px;
+        }
+
+        &__desc {
+            font-size: 4.8rem;
+        }
+
+        &__note {
+            font-size: 1.8rem;
+        }
+    }
+
+    .price-item {
+        padding: 20px 0;
+        border-top: 1px solid #D8D8D8;
+
+        &__available {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    }
+
+    .top-wave {
+        transform: translateY(1px);
+    }
+
+    .bottom-wave{
+        transform: translateY(-1px);
+    }

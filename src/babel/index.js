@@ -8,3 +8,6 @@ tabmenu;
 
 const splide = require("./splide.js");
 splide;
+
+const fadeout = require("./fadeout.js");
+fadeout;

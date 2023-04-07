@@ -3,6 +3,34 @@
     @include sp{
         padding: 20px 0;
     }
+
+    &__inner {
+        background-color: $color_main;
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-size: 6.4rem;
+        line-height: 1;
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-weight: normal;
+        @include sp{
+            font-size: 4rem;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 40px;
+        font-weight: bold;
+        @include sp{
+            font-size: 1.4rem;
+            margin: 5px 0 30px;
+        }
+    }
 }
 
 .container {
