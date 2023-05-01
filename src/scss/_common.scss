@@ -61,3 +61,23 @@
         margin: 0 auto;
     }
 }
+
+.btn-rev {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1;
+    color: $color_main;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 50px;
+    background-color: $grayscale_white;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--center {
+        display: block;
+        margin: 0 auto;
+    }
+}
