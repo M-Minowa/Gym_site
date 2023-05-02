@@ -176,6 +176,8 @@
       </div>
     </div>
   </div>
+</section>
+
 <section class="section price">
   <svg class="top-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
     <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(0 -224)" fill="#eb51c2"/>
@@ -246,7 +248,7 @@
           </div>
         </section>
         <div class="price-list__scroll">
-          <span class="price-list__scroll--icon material-symbols-outlined">east</span>
+          <span class="price-list__scroll--icon material-symbols-rounded">east</span>
           スクロール
         </div>
       </div>
@@ -256,6 +258,64 @@
   <svg class="bottom-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
     <path id="wave" d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(375 249) rotate(180)" fill="#eb51c2"/>
   </svg>
+</section>
+
+<section class="section faq">
+  <h2 class="faq__title">
+    FAQ
+    <span class="faq__subtitle">よくあるご質問</span>
+  </h2>
+  <div class="container">
+    <ul class="include-accordion scroll-control">
+      <li class="accordion__item">
+        <button class="accordion__question accordionBtn" type="button">
+          <span class="accordion__label">Q</span>
+          <p class="accordion__text">見学や体験は可能ですか？</p>
+        </button>
+        <ul>
+          <li class="accordion__answer">
+            <span class="accordion__label">A</span>
+            <p class="accordion__text">無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。</p>
+          </li>
+        </ul>
+      </li>
+      <li class="accordion__item">
+        <button class="accordion__question accordionBtn" type="button">
+          <span class="accordion__label">Q</span>
+          <p class="accordion__text">用意するものは何がありますか？</p>
+        </button>
+        <ul>
+          <li class="accordion__answer">
+            <span class="accordion__label">A</span>
+            <p class="accordion__text">シューズをご持参ください。ウェアとタオルは無料でレンタルが可能です。</p>
+          </li>
+        </ul>
+      </li>
+      <li class="accordion__item">
+        <button class="accordion__question accordionBtn" type="button">
+          <span class="accordion__label">Q</span>
+          <p class="accordion__text">シャワールームはありますか？</p>
+        </button>
+        <ul>
+          <li class="accordion__answer">
+            <span class="accordion__label">A</span>
+            <p class="accordion__text">5つのシャワールームがございます。ボディソープ・シャンプー・リンスなどのアメニティやドライヤーもご用意しております。</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="category">
+  <picture>
+    <source srcset="images/sp_cta.jpg" media="(max-width: 767px)">
+    <img src="images/pc_cta.jpg" alt="" loading="lazy">
+  </picture>
+  <div class="category__body">
+    <div class="category__title">Come join us!! 😊</div>
+    <a href="#" class="category__btn btn--center btn-rev">無料カウンセリングを受ける</a>
+  </div>
 </section>
 
 {% endblock %}

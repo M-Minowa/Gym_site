@@ -11,3 +11,6 @@ splide;
 
 const fadeout = require("./fadeout.js");
 fadeout;
+
+const scroll = require("./scroll.js");
+scroll;

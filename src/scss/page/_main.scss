@@ -348,6 +348,8 @@
         max-width: 1200px;
         margin: 0 auto;
         color: $text_main;
+        font-weight: normal;
+
         @include sp{
             font-size: 3.2rem;
         }
@@ -358,6 +360,7 @@
         font-size: 2rem;
         margin: 10px 0 40px;
         color: $color_main;
+        font-weight: bold;
         @include sp{
             font-size: 1.4rem;
             margin: 5px 0 30px;
@@ -509,69 +512,154 @@
     }
 }
 
-    .price-unit {
+.price-unit {
+    background-color: $grayscale_white;
+    padding: 40px 20px 10px;
+    color: $text_main;
+    border-radius: 10px;
+    position: relative;
+    @include sp{
+        width: 335px;
+    }
+    &__label {
         background-color: $grayscale_white;
-        padding: 40px 20px 10px;
+        border: 2px solid $color_main;
+        border-radius: 70px;
+        padding: 12px;
+        width: 256px;
+        color: $color_main;
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__course {
+        color: $color_main;
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+    }
+    &__price {
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 4.8rem;
+    }
+    &__note {
+        font-size: 1.8rem;
+    }
+}
+.price-item {
+    padding: 20px 0;
+    border-top: 1px solid #D8D8D8;
+    &__available {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
+.top-wave {
+    transform: translateY(1px);
+}
+.bottom-wave{
+    transform: translateY(-1px);
+}
+
+.faq {
+    &__title {
+        font-size: 6.4rem;
+        line-height: 1;
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
         color: $text_main;
-        border-radius: 10px;
-        position: relative;
+        font-weight: normal;
         @include sp{
-            width: 335px;
+            font-size: 3.2rem;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 40px;
+        color: $color_main;
+        font-weight: bold;
+        @include sp{
+            font-size: 1.4rem;
+            margin: 5px 0 30px;
+        }
+    }
+
+    .accordion {
+        &__item {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 30px 20px 0;
+        }
+
+        &__question {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            font-size: 1.5rem;
         }
 
         &__label {
-            background-color: $grayscale_white;
-            border: 2px solid $color_main;
-            border-radius: 70px;
-            padding: 12px;
-            width: 256px;
-            color: $color_main;
-            font-size: 2rem;
-            font-weight: bold;
-            position: absolute;
-            top: -24px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        &__course {
             color: $color_main;
             font-size: 2.6rem;
-            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: $font_jp;
+            text-align: center;
+            flex: 0 0 26px;
         }
 
-        &__price {
-            margin-bottom: 20px;
-        }
-
-        &__desc {
-            font-size: 4.8rem;
-        }
-
-        &__note {
-            font-size: 1.8rem;
-        }
-    }
-
-    .price-item {
-        padding: 20px 0;
-        border-top: 1px solid #D8D8D8;
-
-        &__available {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+        &__answer {
+            display: flex;
+            padding-top: 15px;
+            gap: 20px;
         }
 
         &__text {
-            font-size: 1.6rem;
-            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1.7;
+        }
+    }
+}
+
+.category {
+    text-align: center;
+    padding-top: 30px;
+
+    &__body {
+        padding: 50px;
+        background-color: $color_main;
+        @include sp{
+            padding: 30px;
         }
     }
 
-    .top-wave {
-        transform: translateY(1px);
+    &__title {
+        font-size: 6.4rem;
+        padding-bottom: 15px;
+        color: $grayscale_white;
+        @include sp{
+            font-size: 2.6rem;
+            padding-bottom: 10px;
+        }
     }
 
-    .bottom-wave{
-        transform: translateY(-1px);
+    &__btn {
+        width: 360px;
+        padding: 30px;
+        font-size: 2rem;
+        @include sp{
+            width: 300px;
+            padding: 20px;
+            font-size: 1.3rem;
+        }
     }
+}
