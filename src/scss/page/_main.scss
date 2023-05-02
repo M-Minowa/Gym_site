@@ -613,13 +613,19 @@
             font-size: 2.6rem;
             font-weight: bold;
             font-family: $font_jp;
+            text-align: center;
+            flex: 0 0 26px;
         }
 
         &__answer {
             display: flex;
             padding-top: 15px;
             gap: 20px;
+        }
+
+        &__text {
             font-size: 1.5rem;
+            line-height: 1.7;
         }
     }
 }
