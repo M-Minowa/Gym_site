@@ -21,17 +21,14 @@ const slideUp = (el) => {
   el.style.height = 0;
 };
 
-let activeIndex = null; //開いているアコーディオンのindex
-
 //アコーディオンコンテナ全てで実行
 const accordions = document.querySelectorAll('ul.include-accordion');
 accordions.forEach((accordion) => {
 
   //アコーディオンボタン全てで実行
   const accordionBtns = accordion.querySelectorAll('.accordionBtn');
-  accordionBtns.forEach((accordionBtn, index) => {
+  accordionBtns.forEach((accordionBtn) => {
     accordionBtn.addEventListener('click', (e) => {
-      activeIndex = index; //クリックされたボタンを把握
       e.target.parentNode.classList.toggle('active'); //ボタンの親要素（=ul>li)にクラスを付与／削除
       const content = accordionBtn.nextElementSibling; //ボタンの次の要素（=ul>ul）
       if(e.target.parentNode.classList.contains('active')){
@@ -39,13 +36,6 @@ accordions.forEach((accordion) => {
       }else{
         slideUp(content); //クラス名にactiveがない（＝開いていた）なら上記で定義した閉じる関数を実行
       }
-      accordionBtns.forEach((accordionBtn, index) => {
-        if (activeIndex !== index) {
-          accordionBtn.parentNode.classList.remove('active');
-          const openedContent = accordionBtn.nextElementSibling;
-          slideUp(openedContent); //現在開いている他のメニューを閉じる
-        }
-      });
       //スクロール制御のために上位階層ulのクラス名を変える
       let container = accordion.closest('.scroll-control'); //sroll-controlnのクラス名である親要素を取得
       if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){

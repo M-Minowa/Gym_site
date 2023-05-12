@@ -17,3 +17,6 @@ scroll;
 
 const toggle = require("./toggle.js");
 toggle;
+
+const scrollAnimation = require("./scroll-animation.js");
+scrollAnimation;

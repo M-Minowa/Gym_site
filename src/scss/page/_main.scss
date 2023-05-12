@@ -88,6 +88,8 @@
         background-size: cover;
         border-radius: 0 0 0 90px;
         background-position: center;
+        animation:fadeIn 0.3s 0.5s; 
+        animation-fill-mode: both;
         @include sp{
             height: 410px;
         }
@@ -614,7 +616,7 @@
                 display: block;
                 content: "expand_more";
                 position: absolute;
-                top: 50%;
+                top: 30px;
                 right: 0;
                 color: $color_main;
                 transform: translateY(-50%);
