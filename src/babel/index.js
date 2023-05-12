@@ -14,3 +14,9 @@ fadeout;
 
 const scroll = require("./scroll.js");
 scroll;
+
+const toggle = require("./toggle.js");
+toggle;
+
+const scrollAnimation = require("./scroll-animation.js");
+scrollAnimation;

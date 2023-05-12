@@ -88,6 +88,8 @@
         background-size: cover;
         border-radius: 0 0 0 90px;
         background-position: center;
+        animation:fadeIn 0.3s 0.5s; 
+        animation-fill-mode: both;
         @include sp{
             height: 410px;
         }
@@ -595,10 +597,38 @@
         }
     }
 
+    &__answer {
+        height: 0px;
+        padding: 0px;
+        overflow: hidden;
+        transition: all 0.5s ease 0s;
+        margin: 0px;
+    }
+
     .accordion {
+
         &__item {
             border-bottom: 1px solid #ccc;
             padding: 20px 30px 20px 0;
+            position: relative;
+
+            &::after {
+                display: block;
+                content: "expand_more";
+                position: absolute;
+                top: 30px;
+                right: 0;
+                color: $color_main;
+                transform: translateY(-50%);
+                font-family: "Material Icons Round";
+                font-size: 2.4rem;
+            }
+
+            &.active {
+                &::after {
+                    content: "expand_less";
+                }
+            }
         }
 
         &__question {
