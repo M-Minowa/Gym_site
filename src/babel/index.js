@@ -1,7 +1,7 @@
 'use strict';
 
-const fadeup = require('./fadeup.js');
-fadeup;
+const scrollHeader = require('./scroll-header.js');
+scrollHeader;
 
 const tabmenu = require('./tabmenu.js');
 tabmenu;
@@ -9,11 +9,11 @@ tabmenu;
 const splide = require("./splide.js");
 splide;
 
-const fadeout = require("./fadeout.js");
-fadeout;
+const scrollLeft = require("./scroll-left.js");
+scrollLeft;
 
-const scroll = require("./scroll.js");
-scroll;
+const scrollTop = require("./scroll-top.js");
+scrollTop;
 
 const toggle = require("./toggle.js");
 toggle;
