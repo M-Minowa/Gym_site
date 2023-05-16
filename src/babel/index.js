@@ -9,8 +9,8 @@ tabmenu;
 const splide = require("./splide.js");
 splide;
 
-const scrollLeft = require("./scroll-left.js");
-scrollLeft;
+const scrollHideArrow = require("./scroll-hide-arrow.js");
+scrollHideArrow;
 
 const scrollTop = require("./scroll-top.js");
 scrollTop;
