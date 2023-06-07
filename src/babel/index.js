@@ -15,8 +15,11 @@ scrollHideArrow;
 const scrollTop = require("./scroll-top.js");
 scrollTop;
 
-const toggle = require("./toggle.js");
-toggle;
+// const toggle = require("./toggle.js");
+// toggle;
 
 const scrollAnimation = require("./scroll-animation.js");
 scrollAnimation;
+
+const toggle = require("./toggle.js");
+toggle;
